@@ -1,15 +1,13 @@
-const cp = require('child_process')
+import cp from 'child_process';
 
-module.exports = Exec
-
-function Exec (command, options = { log: false, cwd: process.cwd() }) {
+export default function Exec (command: string, options = { log: false, cwd: process.cwd() }) {
   if (options.log) console.log(command)
 
   return new Promise((done, failed) => {
     cp.exec(command, { ...options }, (err, stdout, stderr) => {
       if (err) {
-        err.stdout = stdout
-        err.stderr = stderr
+        process.stdout.write(stdout)
+        process.stderr.write(stderr);
         failed(err)
         return
       }
