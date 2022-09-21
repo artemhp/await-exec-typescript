@@ -1,19 +1,21 @@
 {
-  "name": "await-exec",
-  "version": "0.1.2",
+  "name": "await-exec-typescript",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hanford/await-exec.git"
+    "url": "git@github.com:artemhp/await-exec.git"
   },
-  "homepage": "https://github.com/hanford/await-exec",
-  "bugs": "https://github.com/hanford/await-exec/issues",
+  "homepage": "https://github.com/artemhp/await-exec",
+  "bugs": "https://github.com/artemhp/await-exec",
   "authors": [
+    "Artem Deikun",
     "Jack Hanford"
   ],
   "tags": [
     "async / await",
     "child process",
     "exec",
+    "typescript",
     "cp.exec",
     "execSync",
     "promise"
@@ -24,10 +26,13 @@
     "exec",
     "cp.exec",
     "execSync",
-    "promise"
+    "promise",
+    "typescript"
   ],
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "typescript": "^4.8.3"
+  }
 }
