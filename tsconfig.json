@@ -2,7 +2,7 @@
     "compilerOptions": {
       "outDir": "./lib",
       "allowJs": true,
-      "target": "es6",      
+      "target": "es6",
       "lib": [ "esnext" ],
       "esModuleInterop": true,
       "strict": true,
@@ -10,7 +10,9 @@
       "moduleResolution": "node",
       "isolatedModules": true,
       "noEmit": true,
-      declaration: true
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "declarationMap": true
     },    
-    "include": ["index.ts"]
+    "include": ["./**/*.ts"],
   }
