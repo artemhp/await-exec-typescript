@@ -8,7 +8,7 @@
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc --declaration index.ts",
-    "prepublish": "tsc"
+    "prepublish": "tsc  --declaration index.ts"
   },
   "homepage": "https://github.com/artemhp/await-exec",
   "bugs": "https://github.com/artemhp/await-exec",
