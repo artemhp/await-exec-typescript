@@ -5,6 +5,10 @@
     "type": "git",
     "url": "git@github.com:artemhp/await-exec.git"
   },
+  "scripts": {
+    "build": "tsc index.ts index.js",
+    "prepublish": "tsc"
+  },
   "homepage": "https://github.com/artemhp/await-exec",
   "bugs": "https://github.com/artemhp/await-exec",
   "authors": [
