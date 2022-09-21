@@ -1,4 +1,4 @@
-import cp from 'child_process';
+import * as cp from 'child_process';
 
 export default function Exec (command: string, options = { log: false, cwd: process.cwd() }) {
   if (options.log) console.log(command)
