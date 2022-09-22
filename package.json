@@ -1,14 +1,14 @@
 {
   "name": "await-exec-typescript",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git@github.com:artemhp/await-exec.git"
   },
   "types": "index.d.ts",
   "scripts": {
-    "build": "tsc --declaration index.ts",
-    "prepublish": "tsc  --declaration index.ts"
+    "build": "tsc",
+    "prepublish": "tsc "
   },
   "homepage": "https://github.com/artemhp/await-exec",
   "bugs": "https://github.com/artemhp/await-exec",
